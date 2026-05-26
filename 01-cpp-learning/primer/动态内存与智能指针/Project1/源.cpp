@@ -14,6 +14,11 @@ void use_test(int a) {
 	A* p = test(a);
 }//使用p但是不删除
 void process(shared_ptr<int>ptr) {};
+int* f() {
+	int* p = new int(3);
+	shared_ptr<int>ssp(p);//从已有指针构造智能指针
+	return p;
+}
 int main() {
 	//shared_ptr共享指针 最优创建：auto ptr=make_shared<T>(值)；
 	// 特点：可拷贝、可赋值、多指针共用一块内存
@@ -22,10 +27,16 @@ int main() {
 	shared_ptr<string>p4 = make_shared<string>(10, '9');
 	cout << *p4 << endl;
 	cout << p3<< endl;
+
+	int *ptr=f();
+	cout << *ptr << endl;//危险，未定义;裸指针构造智能指针需要保证原指针指向的对象没有被智能指针释放，
+	//此例中，在函数f中将ssp指向p指向的对象，ssp作用域为f，离开作用域ssp被释放，对象被销毁，ptr成为野指针
+	
 	//使用new动态分配和初始化对象
 	int* pi = new int;//pi指向一个动态分配的、为初始化的无名对象
 	string* ps = new string;//初始化为空string
 	string* ps1 = new string();
+
 	//动态分配的const 对象
 	const int* pci = new const int(2026);//合法,但必须初始化
 	//释放内存
