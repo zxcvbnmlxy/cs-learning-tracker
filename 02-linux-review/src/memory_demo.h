@@ -1,10 +1,7 @@
 #ifndef MEMORY_DEMO_H
 #define MEMORY_DEMO_H
 
-#include <iostream>
-#include <memory>
-#include <string>
-#include <vector>
+#include <cstddef>   // size_t
 
 // ======== 1. 原始指针 —— new / delete ========
 void demo_raw_pointer();

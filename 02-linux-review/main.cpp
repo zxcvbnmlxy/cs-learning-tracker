@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "src/memory_demo.h"
 
 int main() {

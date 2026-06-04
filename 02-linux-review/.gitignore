@@ -5,6 +5,10 @@ build_cmake/
 *.exe
 *.out
 
+# Root-level compiled binaries (one-step g++ builds)
+demo
+gpp_demo
+
 # VSCode
 .vscode/
 

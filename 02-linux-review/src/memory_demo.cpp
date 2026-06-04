@@ -1,3 +1,8 @@
+#include <cstdio>
+#include <cstddef>
+#include <memory>
+#include <utility>
+#include <iostream>
 #include "memory_demo.h"
 
 // ============================================================
@@ -119,7 +124,10 @@ void practice_shared_ptr() {
 // ============================================================
 void demo_memory_leak() {
     std::cout << "\n========== BAD: memory leak ==========\n";
-    std::cout << "  int* p = new int(999);  // forgot delete!\n";
+    int* p = new int(999);             // ← 实际分配，但没有 delete
+    std::cout << "  leaked *p = " << *p << "  ← memory NOT freed!\n";
+    std::cout << "  (run with valgrind to see the leak)\n";
+    // 故意不写 delete p;   ← 这就是内存泄露！
 }
 
 void demo_correct_way() {
