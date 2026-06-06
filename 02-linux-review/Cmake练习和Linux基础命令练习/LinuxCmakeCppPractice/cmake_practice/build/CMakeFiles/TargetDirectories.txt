@@ -1,0 +1,8 @@
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/lib/CMakeFiles/MathUtils.dir
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/lib/CMakeFiles/edit_cache.dir
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/lib/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app/CMakeFiles/MathDemo.dir
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app/CMakeFiles/edit_cache.dir
+/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app/CMakeFiles/rebuild_cache.dir
