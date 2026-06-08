@@ -42,6 +42,7 @@ awk 'NR>1 && $5 == "北京" {print $1, $2}' score_data.txt
 ```
 
 ### 4. BEGIN / END 块
+BEGIN //表头
 ```bash
 awk 'BEGIN {print "=== 开始 ==="} {print $1} END {print "=== 结束 ==="}' score_data.txt
 ```
