@@ -17,16 +17,14 @@ using namespace std;
 template<typename MapType>
 void count_words(const string& filename, const string& label) {
     ifstream file(filename);
-    if (!file.is_open()) {
-        cerr << label << ": 无法打开文件" << endl;
-        return;
+    if(!file.is_open()){
+        cerr<<"无法打开文件";return ;
     }
 
     auto start = chrono::high_resolution_clock::now();
-
     MapType word_count;
     string word;
-    while (file >> word) {
+    while(file>>word){
         word_count[word]++;
     }
     file.close();
@@ -35,16 +33,13 @@ void count_words(const string& filename, const string& label) {
     auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
 
     // 转存并排序输出
-    vector<pair<string,int>> words(word_count.begin(), word_count.end());
-    sort(words.begin(), words.end(), [](const auto& a, const auto& b) {
-        return a.second > b.second;
-    });
+    vector<pair<string,int>>words(word_count.begin(),word_count.end());
+    sort(words.begin(),words.end(),[](const auto &a,const auto &b){return a.second>b.second;});
+
 
     cout << "\n=== " << label << " (耗时: " << duration.count() << " μs) ===" << endl;
-    int count = 0;
-    for (const auto& [w, freq] : words) {
-        cout << w << " : " << freq << endl;
-        if (++count >= 5) break;
+    for(auto &[w,freq]:words){
+        cout<<w<<":"<<freq<<endl;
     }
 }
 
