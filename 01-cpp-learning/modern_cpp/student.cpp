@@ -18,7 +18,10 @@ class student{
         name=n;
         return *this;
     }
-    
+    student &getCount(){
+        cout<<"count:"<<count<<endl;
+        return *this;
+    }
     friend ostream& operator<<(ostream &os,const student &s){
         os<<"id:"<<s.id<<endl;
         os<<"name:"<<s.name<<endl;
@@ -40,6 +43,6 @@ int main(){
     b.setScore(85);
     cout<<a<<endl;
     cout<<b<<endl;
-    cout<<student::count<<endl;
+    a.getCount();
     return 0;
 }

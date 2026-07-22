@@ -1,0 +1,7 @@
+#!/bin/bash
+sleep 300 &
+sleep 200 &
+jobs
+kill %4
+jobs
+
