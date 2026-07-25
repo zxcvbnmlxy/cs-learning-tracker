@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice
+CMAKE_SOURCE_DIR = /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build
+CMAKE_BINARY_DIR = /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -114,14 +114,14 @@ lib/clean: lib/CMakeFiles/MathUtils.dir/clean
 lib/CMakeFiles/MathUtils.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/MathUtils.dir/build.make lib/CMakeFiles/MathUtils.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/CMakeFiles/MathUtils.dir/build.make lib/CMakeFiles/MathUtils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=3,4 "Built target MathUtils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=3,4 "Built target MathUtils"
 .PHONY : lib/CMakeFiles/MathUtils.dir/all
 
 # Build rule for subdir invocation for target.
 lib/CMakeFiles/MathUtils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/MathUtils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 0
 .PHONY : lib/CMakeFiles/MathUtils.dir/rule
 
 # Convenience name for target.
@@ -140,14 +140,14 @@ lib/CMakeFiles/MathUtils.dir/clean:
 app/CMakeFiles/MathDemo.dir/all: lib/CMakeFiles/MathUtils.dir/all
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/MathDemo.dir/build.make app/CMakeFiles/MathDemo.dir/depend
 	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/MathDemo.dir/build.make app/CMakeFiles/MathDemo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=1,2 "Built target MathDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=1,2 "Built target MathDemo"
 .PHONY : app/CMakeFiles/MathDemo.dir/all
 
 # Build rule for subdir invocation for target.
 app/CMakeFiles/MathDemo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app/CMakeFiles/MathDemo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles 0
 .PHONY : app/CMakeFiles/MathDemo.dir/rule
 
 # Convenience name for target.

@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libmath_utils.a"
+  "libMathUtils.a"
 )

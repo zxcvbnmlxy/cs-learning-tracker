@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp" "app/CMakeFiles/MathDemo.dir/main.cpp.o" "gcc" "app/CMakeFiles/MathDemo.dir/main.cpp.o.d"
+  "/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp" "app/CMakeFiles/MathDemo.dir/main.cpp.o" "gcc" "app/CMakeFiles/MathDemo.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

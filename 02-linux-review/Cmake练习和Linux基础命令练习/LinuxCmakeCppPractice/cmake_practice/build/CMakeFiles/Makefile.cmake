@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/CMakeLists.txt"
-  "/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/CMakeLists.txt"
+  "/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/CMakeLists.txt"
+  "/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/lib/CMakeLists.txt"
+  "/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/lib/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MathUtils.dir/math_util.cpp.o"
   "CMakeFiles/MathUtils.dir/math_util.cpp.o.d"
-  "libmath_utils.a"
-  "libmath_utils.pdb"
+  "libMathUtils.a"
+  "libMathUtils.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

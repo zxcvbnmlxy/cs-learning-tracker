@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/MathDemo.dir/main.cpp.o -o ../bin/MathDemo  ../lib/libmath_utils.a 
+/usr/bin/c++ CMakeFiles/MathDemo.dir/main.cpp.o -o MathDemo  ../lib/libMathUtils.a 

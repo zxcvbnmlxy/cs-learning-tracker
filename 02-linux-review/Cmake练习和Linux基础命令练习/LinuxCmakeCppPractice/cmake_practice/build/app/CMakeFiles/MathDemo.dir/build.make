@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice
+CMAKE_SOURCE_DIR = /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build
+CMAKE_BINARY_DIR = /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build
 
 # Include any dependencies generated for this target.
 include app/CMakeFiles/MathDemo.dir/depend.make
@@ -70,18 +70,18 @@ include app/CMakeFiles/MathDemo.dir/progress.make
 include app/CMakeFiles/MathDemo.dir/flags.make
 
 app/CMakeFiles/MathDemo.dir/main.cpp.o: app/CMakeFiles/MathDemo.dir/flags.make
-app/CMakeFiles/MathDemo.dir/main.cpp.o: /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp
+app/CMakeFiles/MathDemo.dir/main.cpp.o: /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp
 app/CMakeFiles/MathDemo.dir/main.cpp.o: app/CMakeFiles/MathDemo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/CMakeFiles/MathDemo.dir/main.cpp.o"
-	cd /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/MathDemo.dir/main.cpp.o -MF CMakeFiles/MathDemo.dir/main.cpp.o.d -o CMakeFiles/MathDemo.dir/main.cpp.o -c /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object app/CMakeFiles/MathDemo.dir/main.cpp.o"
+	cd /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT app/CMakeFiles/MathDemo.dir/main.cpp.o -MF CMakeFiles/MathDemo.dir/main.cpp.o.d -o CMakeFiles/MathDemo.dir/main.cpp.o -c /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp
 
 app/CMakeFiles/MathDemo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MathDemo.dir/main.cpp.i"
-	cd /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp > CMakeFiles/MathDemo.dir/main.cpp.i
+	cd /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp > CMakeFiles/MathDemo.dir/main.cpp.i
 
 app/CMakeFiles/MathDemo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MathDemo.dir/main.cpp.s"
-	cd /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp -o CMakeFiles/MathDemo.dir/main.cpp.s
+	cd /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app/main.cpp -o CMakeFiles/MathDemo.dir/main.cpp.s
 
 # Object files for target MathDemo
 MathDemo_OBJECTS = \
@@ -90,22 +90,22 @@ MathDemo_OBJECTS = \
 # External object files for target MathDemo
 MathDemo_EXTERNAL_OBJECTS =
 
-bin/MathDemo: app/CMakeFiles/MathDemo.dir/main.cpp.o
-bin/MathDemo: app/CMakeFiles/MathDemo.dir/build.make
-bin/MathDemo: lib/libmath_utils.a
-bin/MathDemo: app/CMakeFiles/MathDemo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/MathDemo"
-	cd /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MathDemo.dir/link.txt --verbose=$(VERBOSE)
+app/MathDemo: app/CMakeFiles/MathDemo.dir/main.cpp.o
+app/MathDemo: app/CMakeFiles/MathDemo.dir/build.make
+app/MathDemo: lib/libMathUtils.a
+app/MathDemo: app/CMakeFiles/MathDemo.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MathDemo"
+	cd /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MathDemo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-app/CMakeFiles/MathDemo.dir/build: bin/MathDemo
+app/CMakeFiles/MathDemo.dir/build: app/MathDemo
 .PHONY : app/CMakeFiles/MathDemo.dir/build
 
 app/CMakeFiles/MathDemo.dir/clean:
-	cd /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && $(CMAKE_COMMAND) -P CMakeFiles/MathDemo.dir/cmake_clean.cmake
+	cd /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app && $(CMAKE_COMMAND) -P CMakeFiles/MathDemo.dir/cmake_clean.cmake
 .PHONY : app/CMakeFiles/MathDemo.dir/clean
 
 app/CMakeFiles/MathDemo.dir/depend:
-	cd /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app /mnt/c/Users/lixianyu/Desktop/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app/CMakeFiles/MathDemo.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/app /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app /mnt/d/lixianyu/Documents/cs-learning-tracker/02-linux-review/Cmake练习和Linux基础命令练习/LinuxCmakeCppPractice/cmake_practice/build/app/CMakeFiles/MathDemo.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : app/CMakeFiles/MathDemo.dir/depend
 
