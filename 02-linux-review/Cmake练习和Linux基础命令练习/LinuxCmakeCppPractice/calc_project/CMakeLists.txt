@@ -1,4 +1,4 @@
 cmake_minimum_required(VERSION 3.28)
-project(MyCMake LANGUAGES CXX)
+project(CalcProject LANGUAGES CXX)
 add_subdirectory(lib)
 add_subdirectory(app)
