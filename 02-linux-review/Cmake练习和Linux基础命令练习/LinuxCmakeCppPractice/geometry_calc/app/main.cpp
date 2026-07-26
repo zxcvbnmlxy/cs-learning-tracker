@@ -1,5 +1,5 @@
 #include<iostream>
-#include"../lib/geometry.h"
+#include"geometry.h"
 using namespace std;
 int main(){
     cout<<circle_area(5)<<"\n";

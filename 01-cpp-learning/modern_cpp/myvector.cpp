@@ -34,9 +34,9 @@ template<typename T>class Myvector{
         return *this;
     }
     T& operator[](int index){
-        if(index<0||index>=size){
-            throw out_of_range("index out of range");
-        }
+        // if(index<0||index>=size){
+        //     throw out_of_range("index out of range");
+        // }
         return data[index];
     }
     Myvector& operator=(Myvector &&other)noexcept{

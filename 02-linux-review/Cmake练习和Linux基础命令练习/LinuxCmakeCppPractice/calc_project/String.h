@@ -55,7 +55,7 @@ public:
         // 在这里写
         return *this;
     }
-
+    
     void print() const {
         std::cout << (data ? data : "null") << "\n";
     }
