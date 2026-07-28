@@ -4,10 +4,10 @@
 using namespace std;
 
 void reverseArray(int arr[], int n){
-    for(int i=0;i<=n;i++){      // ？？
+    for(int i=0;i<n/2;i++){      // ？？
         int t=arr[i];
-        arr[i]=arr[n-i];
-        arr[n-i]=t;
+        arr[i]=arr[n-1-i];
+        arr[n-1-i]=t;
     }
 }
 
@@ -15,15 +15,15 @@ int main(){
     int n;
     cout<<"输入数组大小: ";
     cin>>n;
-    int arr[5];                 // ？？
+    int* arr = new int[n];
     cout<<"输入"<<n<<"个数:\n";
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
 
     // 计算最大值
-    int maxVal;
-    for(int i=0;i<n;i++){       // ？？
+    int maxVal = arr[0];
+    for(int i=1;i<n;i++){       // ？？
         if(arr[i]>maxVal)
             maxVal=arr[i];
     }
@@ -36,7 +36,7 @@ int main(){
     }
 
     // 计算平均值
-    int sum;
+    int sum = 0;
     for(int i=0;i<n;i++){
         sum+=arr[i];
     }
@@ -50,5 +50,6 @@ int main(){
     for(int i=0;i<n;i++)
         cout<<arr[i]<<" ";
     cout<<"\n";
+    delete[] arr;
     return 0;
 }
