@@ -63,6 +63,6 @@ int main() {
     int b[5] = {1, 2, 3, 4, 5};
     int s = sumArray(b, 5);
     cout << "sum = " << s << "\n";
-
+    cout<<"完成";
     return 0;
 }
