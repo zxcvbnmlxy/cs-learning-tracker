@@ -1,9 +1,11 @@
 #include<iostream>
 #include<thread>
+#include<atomic>
 using namespace std;
 
-long long cnt=0; // 共享资源：计数器
+atomic<int> cnt(0); // 计数器，初始值为0
 
+// long long cnt=0;
 void work(){// 线程函数：对计数器进行加法操作
     for(int i=0;i<10000000;i++){
         cnt++; // cnt=cnt+1; // 读-改-写
