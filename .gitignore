@@ -1,0 +1,11 @@
+# 编译产物 / build artifacts
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.o
+
+# g++ -o 生成的无扩展名二进制
+07-多线程/epoll_test
+07-多线程/stress_client
+luogu_algorithm/最短路/p3393_test
