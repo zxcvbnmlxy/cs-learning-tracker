@@ -14,10 +14,9 @@ class Config{
         
         if(inst==nullptr){
             lock_guard<mutex> Lock(mxt2);
-            if(inst==nullptr){
+            if(inst==nullptr)
                 inst=new Config();
-                }
-            }
+        }
             return inst;
         }
     private:
