@@ -201,36 +201,36 @@
 // }
 
 
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
-    vector<int>a(1);
-    int x;
-    while(cin>>x)a.push_back(x);
-    int n=a.size()-1;
-    vector<int>d1;
-    for(int i=1;i<=n;i++){
-        int p=upper_bound(d1.begin(),d1.end(),a[i],greater<int>())-d1.begin();
-        if(p==d1.size())d1.push_back(a[i]);
-        else d1[p]=a[i];
-    }
-        cout<<d1.size()<<"\n";
-    vector<int>d2;
-    for(int i=1;i<=n;i++){
-        int p=lower_bound(d2.begin(),d2.end(),a[i])-d2.begin();
-        if(p==d2.size())d2.push_back(a[i]);
-        else d2[p]=a[i];
-    }
-    cout<<d2.size()<<"\n";
-    return 0;
-}
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     vector<int>a(1);
+//     int x;
+//     while(cin>>x)a.push_back(x);
+//     int n=a.size()-1;
+//     vector<int>d1;
+//     for(int i=1;i<=n;i++){
+//         int p=upper_bound(d1.begin(),d1.end(),a[i],greater<int>())-d1.begin();
+//         if(p==d1.size())d1.push_back(a[i]);
+//         else d1[p]=a[i];
+//     }
+//         cout<<d1.size()<<"\n";
+//     vector<int>d2;
+//     for(int i=1;i<=n;i++){
+//         int p=lower_bound(d2.begin(),d2.end(),a[i])-d2.begin();
+//         if(p==d2.size())d2.push_back(a[i]);
+//         else d2[p]=a[i];
+//     }
+//     cout<<d2.size()<<"\n";
+//     return 0;
+// }
 
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
 vector<ll>tree,a,rk;
-void update(int node,int l,int r,int pos,int dp){
-    if(l==r){tree[node]+=dp;return;}
+void update(int node,int l,int r,int pos,ll dp){
+    if(l==r){tree[node]=max(tree[node],dp);return;}
     int mid=l+(r-l)/2;
     if(pos<=mid)update(node*2,l,mid,pos,dp);
     else update(node*2+1,mid+1,r,pos,dp);
@@ -255,8 +255,22 @@ int main(){
         int k=lower_bound(b.begin(),b.end(),a[i])-b.begin()+1;
         rk.push_back(k);
     }
-    int m=rk.size();
+    int m=b.size();
     tree.assign(4*m+1,0);
-    cout<<ans<<"\n";
+    //第一遍不上升
+    ll ans1=0;
+    for(int i=1;i<=n;i++){
+        ll dp=1+query(1,1,m,rk[i],m);
+        update(1,1,m,rk[i],dp);
+        ans1=max(dp,ans1);
+    }
+    tree.assign(4*m+1,0);
+    ll ans2=0;
+    for(int i=1;i<=n;i++){
+        ll g=1+query(1,1,m,1,rk[i]-1);
+        update(1,1,m,rk[i],g);
+        ans2=max(ans2,g);
+    }
+    cout<<ans1<<"\n"<<ans2;
     return 0;
 }
