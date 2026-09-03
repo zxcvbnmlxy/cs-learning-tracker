@@ -94,3 +94,27 @@ SWL不区分大小写，可以多行或者单行，用分号结尾;
     1. 外键约束名可以自定义，也可以不写，MySQL会自动生成一个外键约束名。
     2. 外键约束的列名必须是关联表的主键或唯一键。
     3. 外键约束的列名和关联表的列名的数据类型必须一致。
+
+指定唯一约束
+    alter table      --修改表关键字
+    表名
+    add unique(列名);
+注意：唯一约束的值可以是null，但是不可以重复
+
+添加数据
+    选择插入
+    insert into 表名(列名1，列名2，...) values(值1，值2，...);
+
+    完全插入
+    insert into 表名 values(值1，值2，...);
+
+注意：如果主键是自动增长，在插入数据时需要使用default或者null或者0占位；
+修改表时添加列的默认值
+    alter table 表名 add column 列名 数据类型 default 默认值;
+
+select 
+    select * from 表名 ;
+    select  列名1，列名2,...from 表名 where 条件;
+    select  表别名.列名1, 表别名.列名2...from 表名 表别名;
+    select  别名.列名1 列别名 from 表名 别名;
+    
