@@ -117,4 +117,20 @@ select
     select  列名1，列名2,...from 表名 where 条件;
     select  表别名.列名1, 表别名.列名2...from 表名 表别名;
     select  别名.列名1 列别名 from 表名 别名;
+
+mysql 中的去重语句
+    select distinct 列名 from 表名;
+注意：假如有多个查询列名，distinct 会去重所有满足列名的记录；
+
+    select 列名1，列名2 ... from 表名 where 条件 ;
+    条件： and  or not , is [not] null ,[not] like '%字母%' ,in(数值1,数值2)
+    % 表示多个或者0个字符，_表示一个字符,like 表示匹配的字母;
+
+求值的运算顺序
+    算术运算 连字操作 比较操作 is [not] null ,[not] like ,[not] in ,not 逻辑操作,and 逻辑操作,or 逻辑操作
+
+order 排序
+    order by 需要匹配的列数;
+    
+
     
