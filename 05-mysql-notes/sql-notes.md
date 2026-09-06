@@ -133,4 +133,13 @@ order 排序
     order by 需要匹配的列数;
     
 
-    
+大小写处理函数
+    lower(s)转小写
+    upper(s)转大写
+字符处理函数
+    length(s)
+    concate(s1,s2)将两个字符串合并在一起
+    substr(s,pos,len)
+    lpad(s1,len,s2)在s1前面填充s2使得长度为len
+    rpad(s1,len,s2)
+    ltim(s)去掉左边空格
