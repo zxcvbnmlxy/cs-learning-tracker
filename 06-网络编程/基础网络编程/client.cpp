@@ -64,11 +64,17 @@ int main(){
     while(true){
         cin.getline(buff,sizeof(buff));// ① 读键盘：你在终端打的字进 buf
         if(strlen(buff)==0)break;// 直接回车 = 结束聊天
-        send(fd,buff,strlen(buff),0);// ② 说：把 buf 发给服务器
-        int n=recv(fd,buff,sizeof(buff),0);// 等服务器回声
-        if(n<=0)break;// 服务器挂了就退出
-        buff[n]='\0';// 补结束符，好当字符串打印
+        int total=0;
+        int msg_len=strlen(buff);
+        send(fd,buff,msg_len,0);// ② 说：把 buf 发给服务器
+        bool flag=true;
+        while(total<msg_len){
+        int n=recv(fd,buff+total,msg_len-total,0);// 等服务器回声
+        if(n<=0){flag=false;break;}// 服务器挂了就退出
+        total+=n;}
+        buff[total]='\0';// 补结束符，好当字符串打印
         cout<<"服务器回声:"<<buff<<endl;// 显示服务器弹回来的话
+        if(flag==false)break;
     }
     close(fd);// 挂机
     cout<<"通话结束，挂了。"<<endl;

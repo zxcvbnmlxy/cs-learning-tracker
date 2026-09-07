@@ -225,52 +225,225 @@
 //     return 0;
 // }
 
-#include<bits/stdc++.h>
-using namespace std;
-typedef long long ll;
-vector<ll>tree,a,rk;
-void update(int node,int l,int r,int pos,ll dp){
-    if(l==r){tree[node]=max(tree[node],dp);return;}
-    int mid=l+(r-l)/2;
-    if(pos<=mid)update(node*2,l,mid,pos,dp);
-    else update(node*2+1,mid+1,r,pos,dp);
-    tree[node]=max(tree[node*2],tree[node*2+1]);
-}
-ll query(int node,int l,int r,int ql,int qr){
-    if(qr<l||ql>r)return 0;
-    if(ql<=l&&qr>=r){return tree[node];}
-    int mid=l+(r-l)/2;
-    ll left=query(node*2,l,mid,ql,qr);
-    ll right=query(node*2+1,mid+1,r,ql,qr);
-    return max(left,right);
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+// vector<ll>tree,a,rk;
+// void update(int node,int l,int r,int pos,ll dp){
+//     if(l==r){tree[node]=max(tree[node],dp);return;}
+//     int mid=l+(r-l)/2;
+//     if(pos<=mid)update(node*2,l,mid,pos,dp);
+//     else update(node*2+1,mid+1,r,pos,dp);
+//     tree[node]=max(tree[node*2],tree[node*2+1]);
+// }
+// ll query(int node,int l,int r,int ql,int qr){
+//     if(qr<l||ql>r)return 0;
+//     if(ql<=l&&qr>=r){return tree[node];}
+//     int mid=l+(r-l)/2;
+//     ll left=query(node*2,l,mid,ql,qr);
+//     ll right=query(node*2+1,mid+1,r,ql,qr);
+//     return max(left,right);
+// }
+// int main(){
+//     a.push_back(0);
+//     ll h;
+//     while(cin>>h)a.push_back(h);
+//     vector<ll>b(a.begin()+1,a.end());
+//     sort(b.begin(),b.end());b.erase(unique(b.begin(),b.end()),b.end());
+//     int n=a.size()-1; rk.push_back(0);
+//     for(int i=1;i<=n;i++){
+//         int k=lower_bound(b.begin(),b.end(),a[i])-b.begin()+1;//lower_bound()在有序(升序数组中)找到第一个>=a的数的位置(迭代器\指针)
+//         rk.push_back(k);
+//     }
+//     int m=b.size();
+//     tree.assign(4*m+1,0);
+//     //第一遍不上升
+//     ll ans1=0;
+//     for(int i=1;i<=n;i++){
+//         ll dp=1+query(1,1,m,rk[i],m);
+//         update(1,1,m,rk[i],dp);
+//         ans1=max(dp,ans1);
+//     }
+//     tree.assign(4*m+1,0);
+//     ll ans2=0;
+//     for(int i=1;i<=n;i++){
+//         ll g=1+query(1,1,m,1,rk[i]-1);
+//         update(1,1,m,rk[i],g);
+//         ans2=max(ans2,g);
+//     }
+//     cout<<ans1<<"\n"<<ans2;
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// typedef long long ll;
+// int main(){
+//         int n,p;
+//         cin>>n>>p;
+//         vector<ll>inv(n+1);
+//         inv[1]=1;
+//         cout<<inv[1]<<"\n";
+//         for(int i=2;i<=n;i++){
+//                 inv[i]=(long long)(p-p/i)*inv[p%i]%p;
+//                 cout<<inv[i]<<"\n";
+//         }
+//         return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main(){
+//     int N;cin>>N;unordered_set<unsigned long long>s;
+//     for(int i=0;i<N;i++){
+//         string x;
+//         cin>>x;unsigned long long hash=0;
+//         for(char c:x){
+//             hash=hash*131+(unsigned long long)c;
+//         }
+//         s.insert(hash);
+//     }
+//     cout<<s.size()<<"\n";
+//     return 0;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// string turn(string &s){
+//     for(int i=0;i<(int)s.size();i++){
+//         if(s[i]>='A'&&s[i]<='Z'){
+//             s[i]=s[i]-'A'+'a';
+//         }
+//     }
+//     return " "+s+" ";
+// }
+// int main(){
+//     string s,t;
+//     int sum=0;
+//     getline(cin,t);t=turn(t);
+//     getline(cin,s);s=turn(s);
+//     int len=t.size();
+//     int index=(int)s.size()-len;
+//     for(int i=0;i<=(int)s.size()-len;i++){
+//         if(s.substr(i,len)==t){
+//             sum++;
+//             index=min(i,index);
+//         }
+//     }
+//     if(sum==0)cout<<-1;
+//     else cout<<sum<<" "<<index;
+//     return 0;
+// }
+
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// const int N=100005;
+// int in[N];
+// vector<int>g[N];
+// vector<int>topo;
+// int n,m;
+// bool kahn(){
+//         queue<int>q;
+//         for(int i=1;i<=n;i++){
+//               if(in[i]==0)q.push(i);  
+//         }
+//         while(!q.empty()){
+//                 int u=q.front();q.pop();
+//                 topo.push_back(u);
+//                 for(int v:g[u]){
+//                         in[v]--;
+//                         if(in[v]==0)q.push(v);
+//                 }
+//         }
+//         return topo.size()==n;
+// }
+// int main(){
+//         cin>>n>>m;
+//         for(int i=1;i<=m;i++){
+//                 int u,v;cin>>u>>v;
+//                 g[u].push_back(v);
+//                 in[v]++;
+//         }
+//         if(kahn()){
+//                 cout<<"YES\n";
+//                 for(int x:topo)cout<<x<<" ";
+//         }
+//         else cout<<"no"<<"\n";
+//         return 0;
+// }
+
+//简单线程池
+#include<thread>
+#include<iostream>
+#include<functional>
+#include<vector>
+#include<queue>
+#include<string>
+#include<condition_variable>
+#include<mutex>
+#include<atomic>
+class ThreadPool{
+        public:
+                ThreadPool(int nums):stop(false){                        for(int i=0;i<nums;i++){
+                                threads.emplace_back([this]{
+                                        while(1){
+                                        std::function<void()>task;
+                                        {
+                                                std::unique_lock<std::mutex>lock(mtx);
+                                               condition.wait(lock,[this]{
+                                                return !tasks.empty()||stop;
+                                               });
+                                               if(stop&&tasks.empty())return ;
+                                               task=std::move(tasks.front());
+                                               tasks.pop();
+                                        }
+                                        task();
+                                        }
+                                });
+                               
+                        }
+                }
+                ~ThreadPool(){
+                        {
+                                std::unique_lock<std::mutex>lock(mtx);
+                                stop=true;
+                        }
+                        condition.notify_all();
+                        for(auto &t:threads){
+                                t.join();
+                        }
+                }
+                template<class F,class ...Agr>
+                void enqueue(F &&f,Agr&& ... agrs){
+                        std::function<void()>task=
+                        std::bind(std::forward<F>(f),std::forward<Agr>(agrs)...);
+                       { 
+                        std::unique_lock<std::mutex>lock(mtx);
+                        tasks.emplace(std::move(task));
+                       }
+                       condition.notify_all();
+                }
+
+        private :
+                std::vector<std::thread> threads;
+                std::queue<std::function<void()>> tasks;
+                std::condition_variable  condition ;
+                bool stop;
+                std::mutex  mtx;
+};
+std::atomic<int>x=10;
+void func(std::atomic<int> &x){
+        for(int i=0;i<10;i++){
+                x++;
+        }
 }
 int main(){
-    a.push_back(0);
-    ll h;
-    while(cin>>h)a.push_back(h);
-    vector<ll>b(a.begin()+1,a.end());
-    sort(b.begin(),b.end());b.erase(unique(b.begin(),b.end()),b.end());
-    int n=a.size()-1; rk.push_back(0);
-    for(int i=1;i<=n;i++){
-        int k=lower_bound(b.begin(),b.end(),a[i])-b.begin()+1;
-        rk.push_back(k);
-    }
-    int m=b.size();
-    tree.assign(4*m+1,0);
-    //第一遍不上升
-    ll ans1=0;
-    for(int i=1;i<=n;i++){
-        ll dp=1+query(1,1,m,rk[i],m);
-        update(1,1,m,rk[i],dp);
-        ans1=max(dp,ans1);
-    }
-    tree.assign(4*m+1,0);
-    ll ans2=0;
-    for(int i=1;i<=n;i++){
-        ll g=1+query(1,1,m,1,rk[i]-1);
-        update(1,1,m,rk[i],g);
-        ans2=max(ans2,g);
-    }
-    cout<<ans1<<"\n"<<ans2;
-    return 0;
+        {
+        ThreadPool pool(5);
+        for(int i=0;i<5;i++)
+        pool.enqueue(func,std::ref(x));
+        }
+        std::cout<<x;
+        return 0;
 }

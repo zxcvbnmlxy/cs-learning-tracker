@@ -25,6 +25,16 @@ class Config{
 };
 Config *Config::inst=nullptr;
 
+//懒汉现代c++写法
+class Singleton{
+    public: 
+        static Singleton& getInstance(){
+            static Singleton instance;
+            return instance;
+        }
+    private:
+        Singleton(){};
+}
 //饿汉
 class config{
 

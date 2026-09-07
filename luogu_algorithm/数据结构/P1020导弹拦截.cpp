@@ -38,7 +38,7 @@ int main(){
         rk[i]=lower_bound(b.begin(),b.end(),a[i])-b.begin()+1;
     k=b.size();
 
-    // ① 不上升
+    // 不上升
     memset(seg,0,sizeof(seg));
     vector<int> f(n+1);
     int ans1=0;
@@ -47,7 +47,7 @@ int main(){
         update(1,1,k,rk[i],f[i]);
         ans1=max(ans1,f[i]);
     }
-    // ② 严格上升
+    // 严格上升
     memset(seg,0,sizeof(seg));
     vector<int> g(n+1);
     int ans2=0;
