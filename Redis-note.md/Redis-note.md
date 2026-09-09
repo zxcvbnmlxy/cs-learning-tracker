@@ -30,3 +30,9 @@ SDIFFsetA setB 属于A不属于B
 SUNION 并集
 SINTRE setA setB 交集
 
+Hash 
+HSET key field value
+HGET key field
+HGETALL key 
+HKEYS key
+HLEN key
