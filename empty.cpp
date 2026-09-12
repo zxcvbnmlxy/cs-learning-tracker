@@ -436,7 +436,7 @@ std::atomic<int>x=10;
 void func(std::atomic<int> &x){
         for(int i=0;i<10;i++){
                 x++;
-        }
+        }  
 }
 int main(){
         {
